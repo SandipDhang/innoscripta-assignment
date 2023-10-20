@@ -1,0 +1,49 @@
+.mn-preference-wrapper {
+  .preference-header {
+    margin: 28px 0px;
+    font-size: 40px;
+    width: 15ch;
+    font-weight: 800;
+  }
+
+  .preference-section {
+    padding: 16px 0px;
+    margin-bottom: 24px;
+    border-bottom: 2px solid rgba($color: #000000, $alpha: 0.1);
+    .section-heading {
+      font-size: 20px;
+      font-weight: 600;
+      color: rgba($color: #000000, $alpha: 0.4);
+    }
+
+    .section-options {
+      margin-top: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+
+      .select-option {
+        border-radius: 50px;
+        padding: 8px 16px;
+        &.selected {
+          color: #fff;
+          background-color: #000;
+        }
+      }
+    }
+  }
+
+  .preference-action {
+    display: flex;
+    gap: 12px;
+    .action-btn {
+      padding: 8px 16px;
+      border-radius: 50px;
+      font-size: 16px;
+      &.save-btn {
+        color: #fff;
+        background-color: #000;
+      }
+    }
+  }
+}

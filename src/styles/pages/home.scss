@@ -1,0 +1,58 @@
+$breakpoint-tablet: 992px;
+$breakpoint-mobile: 576px;
+
+.mn-home {
+  height: 100%;
+  .mn-home-news-list-wrapper {
+    background-color: #f0f3f4;
+    height: calc(100% - 100px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    .mn-news-filter {
+      position: sticky;
+      top: 0px;
+      padding: 16px 0px;
+      background-color: #f0f3f4;
+
+      .filter-btns {
+        display: flex;
+        gap: 12px;
+
+        .news-type-btn {
+          padding: 8px 16px;
+          border-radius: 50px;
+
+          &.selected {
+            background-color: #000;
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    .mn-news-wrapper {
+      overflow-x: hidden;
+      overflow-y: auto;
+      padding: 12px 0px;
+      height: 100%;
+
+      .mn-news-list {
+        display: flex;
+        row-gap: 32px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .mn-news-card {
+          width: 45%;
+          @media (max-width: $breakpoint-tablet) {
+            width: 40%;
+          }
+          @media (max-width: $breakpoint-mobile) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
